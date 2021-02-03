@@ -64,4 +64,15 @@ else
 }
 return
 
+; --------------------------------------------------------------------------------------
+;  aktywna klasa (co by wiedzieć które to okno:-) potrzbne dla: ahk_class TTOTAL_CMD
+;  ctrl+shift+F7
+; --------------------------------------------------------------------------------------
+
+^+F7::
+WinGetClass, class, A
+MsgBox, The active window's class is "%class%".
+
+
+
 
